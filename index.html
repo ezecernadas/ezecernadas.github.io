@@ -235,6 +235,10 @@
   .proj-facts .f .v{ color:var(--fg); font-weight:600; font-size:var(--step-0); margin-top:.15rem; }
   .proj-icon{ width:46px; height:46px; border-radius:12px; display:grid; place-items:center; background:var(--accent-dim); border:1px solid rgba(52,211,153,0.2); color:var(--accent); flex:0 0 auto; }
   .proj-icon svg{ width:24px; height:24px; }
+  .proj .status-pill.status-done{ color:var(--fg-muted); border-color:var(--border); background:var(--surface); }
+  .proj p.desc code{ font-family:var(--font-mono); font-size:.9em; color:var(--fg); }
+  .proj-link{ display:inline-flex; align-items:center; gap:.5rem; margin-top:1.4rem; font-weight:600; font-size:var(--step--1); color:var(--accent); }
+  .proj-link svg{ width:16px; height:16px; }
   @media (min-width:820px){ .proj.featured{ padding:clamp(2rem,4vw,3rem); } }
 
   /* ============ STACK ============ */
@@ -369,7 +373,7 @@
       <div class="stat"><div class="num"><span class="u">~</span>49<span class="u">%</span></div><div class="lbl">Reducción del tiempo de primera respuesta</div></div>
       <div class="stat"><div class="num">3</div><div class="lbl">Servicios self-hosted en producción</div></div>
       <div class="stat"><div class="num">2024<span class="u">→</span></div><div class="lbl">Analista de Sistemas en Saborigal</div></div>
-      <div class="stat"><div class="num">COALA</div><div class="lbl">Plataforma web propia en producción</div></div>
+      <div class="stat"><div class="num">COALA</div><div class="lbl">Tesis: plataforma web en equipo de 4</div></div>
     </div>
   </div>
 </section>
@@ -380,7 +384,7 @@
     <span class="eyebrow reveal">01 — Sobre mí</span>
     <div class="about-grid">
       <div class="about-body reveal">
-        <p>Soy <strong>Analista de Sistemas en formación</strong>, con un perfil que va del <strong>relevamiento</strong> hasta la <strong>puesta en producción</strong>. No me quedo en el síntoma: me interesa entender el problema de fondo y resolverlo de raíz.</p>
+        <p>Soy <strong>Analista de Sistemas</strong> en Saborigal y estudiante de la Licenciatura en Sistemas (UNGS), con un perfil que va del <strong>relevamiento</strong> hasta la <strong>puesta en producción</strong>. No me quedo en el síntoma: me interesa entender el problema de fondo y resolverlo de raíz.</p>
         <p>Trabajo en equipos reducidos de IT, donde hay que tener alcance integral: administrar plataformas, integrar sistemas que no fueron pensados para hablarse entre sí, y automatizar lo que se hace a mano. Autónomo, ordenado y con criterio técnico para elegir la herramienta correcta, no la de moda.</p>
       </div>
       <div class="principles reveal" style="transition-delay:.1s">
@@ -434,7 +438,7 @@
 <section id="proyectos">
   <div class="wrap">
     <span class="eyebrow reveal">03 — Proyectos</span>
-    <h2 class="title reveal" style="margin-bottom:2.5rem">Cosas que construí y salieron a producción.</h2>
+    <h2 class="title reveal" style="margin-bottom:2.5rem">Proyectos que construí de punta a punta.</h2>
     <div class="proj-grid">
 
       <!-- COALA -->
@@ -444,9 +448,9 @@
             <div class="proj-kind">Proyecto final · Tesis</div>
             <h3>COALA</h3>
           </div>
-          <span class="status-pill"><span class="dot" style="width:6px;height:6px"></span> En producción</span>
+          <span class="status-pill status-done">Finalizado · 2025</span>
         </div>
-        <p class="desc">Comunidad Online de Apuntes Libres y Accesibles: una plataforma web colaborativa para compartir y organizar apuntes entre estudiantes. Desarrollada con arquitectura <b style="color:var(--fg)">MVC</b> y un motor de plantillas propio, con un módulo de IA para la premoderación automática de contenido. El proyecto arrancó con relevamiento real junto a docentes y alumnos.</p>
+        <p class="desc">Comunidad Online de Apuntes Libres y Accesibles: una plataforma web colaborativa para compartir y organizar apuntes entre estudiantes. Desarrollada con arquitectura <b style="color:var(--fg)">MVC</b> y un motor de plantillas propio, con un módulo de IA para la premoderación automática de contenido. El proyecto arrancó con relevamiento real junto a docentes y alumnos y estuvo en producción con usuarios reales.</p>
         <div class="proj-facts">
           <div class="f"><div class="k">Rol</div><div class="v">Desarrollo · Equipo de 4</div></div>
           <div class="f"><div class="k">Arquitectura</div><div class="v">MVC + motor propio</div></div>
@@ -456,6 +460,10 @@
         <div class="tag-row" style="margin-top:0;border-top:none;padding-top:0">
           <span class="tag">PHP</span><span class="tag">MVC</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">MariaDB</span><span class="tag">Google Document AI</span>
         </div>
+        <a href="https://github.com/Joaquin-dv/Tesis_COALA" target="_blank" rel="noopener" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          Ver código en GitHub
+        </a>
       </article>
 
       <!-- BOT / INFRA -->
@@ -479,6 +487,60 @@
         <div class="tag-row" style="margin-top:0;border-top:none;padding-top:0">
           <span class="tag">n8n</span><span class="tag">OpenAI API</span><span class="tag">Chatwoot</span><span class="tag">WhatsApp Business API</span><span class="tag">Docker</span><span class="tag">GCP</span>
         </div>
+      </article>
+
+      <!-- STEAMSHARE -->
+      <article class="proj reveal" style="transition-delay:.16s">
+        <div class="proj-top">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11ZM6 16h.01M10 16h.01"/></svg></div>
+            <div>
+              <div class="proj-kind">Open source · Linux</div>
+              <h3>steamshare</h3>
+            </div>
+          </div>
+          <span class="status-pill status-done">GPL-3.0</span>
+        </div>
+        <p class="desc">Herramienta para compartir <b style="color:var(--fg)">una sola biblioteca de Steam</b> entre Windows y Linux en un dual boot, sin instalar cada juego dos veces. Resuelve las tres causas que corrompen una biblioteca NTFS compartida: los prefijos de Proton, las builds nativas de Linux y el Fast Startup de Windows. Usa montajes de systemd con <code>ntfs3</code>, bind mounts a ext4 y un servicio que fuerza Proton en vivo mientras Steam corre.</p>
+        <div class="proj-facts">
+          <div class="f"><div class="k">Plataformas</div><div class="v">Linux · Windows</div></div>
+          <div class="f"><div class="k">Sin dependencias</div><div class="v">python3 + systemd</div></div>
+          <div class="f"><div class="k">Calidad</div><div class="v">CI con tests sobre ntfs3 real</div></div>
+        </div>
+        <div class="tag-row" style="margin-top:0;border-top:none;padding-top:0">
+          <span class="tag">Python</span><span class="tag">systemd</span><span class="tag">PowerShell</span><span class="tag">NTFS / ntfs3</span><span class="tag">Proton</span><span class="tag">GitHub Actions</span>
+        </div>
+        <a href="https://github.com/ezecernadas/steamshare" target="_blank" rel="noopener" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          Ver código en GitHub
+        </a>
+      </article>
+
+      <!-- GOLDHEN PLUGIN MANAGER -->
+      <article class="proj reveal" style="transition-delay:.24s">
+        <div class="proj-top">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
+            <div>
+              <div class="proj-kind">Open source · C · PS4 homebrew</div>
+              <h3>GoldHEN Plugin Manager</h3>
+            </div>
+          </div>
+          <span class="status-pill status-done">v1.1.1</span>
+        </div>
+        <p class="desc">Aplicación homebrew para PS4 (GoldHEN) que elige qué plugins se cargan, en forma global y por juego, sin editar <code>plugins.ini</code> a mano por FTP. Detecta los juegos instalados leyendo la base SQLite del sistema, importa la configuración existente sin perder nada y escribe de forma atómica (archivo temporal + rename, con backup). Derivado de PS4 Cheats Manager y reducido a una sola tarea.</p>
+        <div class="proj-facts">
+          <div class="f"><div class="k">Plataforma</div><div class="v">PS4 · OpenOrbis SDK</div></div>
+          <div class="f"><div class="k">Datos</div><div class="v">INI + JSON + SQLite</div></div>
+          <div class="f"><div class="k">Calidad</div><div class="v">Tests unitarios en host</div></div>
+        </div>
+        <div class="tag-row" style="margin-top:0;border-top:none;padding-top:0">
+          <span class="tag">C</span><span class="tag">SDL2</span><span class="tag">SQLite</span><span class="tag">Makefile</span><span class="tag">OpenOrbis</span>
+        </div>
+        <a href="https://github.com/ezecernadas/goldhen-plugin-manager" target="_blank" rel="noopener" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          Ver código en GitHub
+        </a>
       </article>
 
     </div>
@@ -575,6 +637,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
         </a>
+        <a href="https://github.com/ezecernadas" target="_blank" rel="noopener" class="cmethod">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
       </div>
     </div>
   </div>
@@ -589,6 +655,7 @@
     <div class="foot-links">
       <a href="mailto:ezecernadas@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/ezequiel-cernadas" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ezecernadas" target="_blank" rel="noopener">GitHub</a>
       <a href="https://wa.me/5491130443321" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
